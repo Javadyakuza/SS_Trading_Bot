@@ -34,8 +34,8 @@ pip install -r requirements.txt
 
 ```
  cd SS_Trading_Bot
- python3 email-listener.py
- python3 excutioner.py
+ python3 src/email-listener.py
+ python3 src/excutioner.py
 
 ```
 
