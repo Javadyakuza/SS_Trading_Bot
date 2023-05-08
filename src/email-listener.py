@@ -6,7 +6,7 @@ from config import APP_PASSWORD
 email = RECEIVER_EMAIL
 app_password = APP_PASSWORD
 folder = "Inbox"
-attachment_dir = "./inboxes"
+attachment_dir = "../inboxes"
 el = email_listener.EmailListener(email, app_password, folder, attachment_dir)
 
 # Log into the IMAP server

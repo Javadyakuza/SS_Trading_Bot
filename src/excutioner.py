@@ -7,7 +7,7 @@ import sys
 import logging
 # import functions
 # assign directory
-directory = 'inboxes'
+directory = '../inboxes'
 
 # array of received signal's
 signal_array = []
@@ -28,13 +28,13 @@ started = False
 
 def filter_and_edit(textString: str, filename: str):
     if BUY_TEXT in str(textString):
-        shutil.move(f'./inboxes/{filename}', f'./used_signals/{filename}')
+        shutil.move(f'../inboxes/{filename}', f'../used_signals/{filename}')
         return 'buy'
     if SELL_TEXT in str(textString):
-        shutil.move(f'./inboxes/{filename}', f'./used_signals/{filename}')
+        shutil.move(f'../inboxes/{filename}', f'../used_signals/{filename}')
         return 'sell'
     else:
-        shutil.move(f'./inboxes/{filename}', f'./spam/{filename}')
+        shutil.move(f'../inboxes/{filename}', f'../spam/{filename}')
         return 'spam'
 
 

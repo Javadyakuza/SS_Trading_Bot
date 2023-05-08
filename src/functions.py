@@ -159,14 +159,14 @@ def amount_calculator(price, side: str):
 
 
 def deal_saver(data):
-    LOG_FILE_PATH = './deals_log/deals_log.txt'
+    LOG_FILE_PATH = '../deals_log/deals_log.txt'
     logFile = open(LOG_FILE_PATH, 'a')
     logFile.write(str(data))
     logFile.close()
 
 
 def PNL_saver(log):
-    LOG_FILE_PATH = './deals_log/deals_log.txt'
+    LOG_FILE_PATH = '../deals_log/deals_log.txt'
     logFile = open(LOG_FILE_PATH, 'a')
     logFile.write(str(log))
     logFile.close()
